@@ -1,3 +1,6 @@
 manage.py
 PizzaProject/__pycache__
 myproject
+db.sqlite3
+PizzaApp/__pycache__
+PizzaApp/migrations/__pycache__
