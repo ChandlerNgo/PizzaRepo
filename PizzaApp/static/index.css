@@ -1,0 +1,35 @@
+.homewindow{
+    background-color: rgb(200, 200, 200);
+}
+
+img{
+    width:50px;
+    height:50px;
+}
+
+.display{
+    display:grid;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.navbar{
+    display:grid;
+    width:80vw;
+    grid-template-columns: 1fr 1fr;
+}
+
+.leftside{
+    display: grid;
+    grid-template-columns: .07fr .2fr;
+}
+
+.rightside{
+    display: grid;
+    justify-content: end;
+    grid-template-columns: .1fr .1fr .07fr;
+}
+
+#bold{
+    font-weight: bold;
+}

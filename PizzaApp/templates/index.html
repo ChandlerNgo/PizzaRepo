@@ -8,6 +8,38 @@
     <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
 </head>
 <body>
-    <p>this home page is working</p>
+    <div class="display">
+        <div class="navbar">
+            <div class="leftside">
+                <img id="pizzaimage" src="{% static 'pizzaicon.jpg' %}"></img>
+                <p>{{welcome}}Welcome, Chandler</p>
+            </div>
+            <div class="rightside">
+                <p><a id="bold">Rewards</a></p>
+                <p><a id="bold">Menu</a></p>
+                <p>{{loginstate}}Log out</p>
+            </div>
+        </div>
+        <div class="homewindow">
+            <div class="deliveryortakeout">
+                <div class="createpizza">
+                    <h1>Create a Pizza</h1>
+                    <h2>Create an experience</h2>
+                </div>
+                <button>Delivery</button>
+                <p>or</p>
+                <button>Take Out</button>
+            </div>
+            <div class="pizzaprices">
+                <h1>14 is 13.99</h1>
+            </div>
+            <div class="menuandrewards">
+                <h1>Take a PEEK at our sides</h1>
+                <button>Menu</button>
+                <button>Rewards</button>
+                <h1>Join our Rewards Program</h1>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
