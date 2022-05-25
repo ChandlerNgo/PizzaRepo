@@ -12,7 +12,7 @@ class UserData(models.Model):
 class Orders(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     orderdate = models.DateField()
-    ordertotal = models.DecimalField()
+    ordertotal = models.DecimalField(decimal_places=2,max_digits=10)
     isDeliver = models.BooleanField()
     isCash = models.BooleanField()
     itemsordered = models.JSONField()
