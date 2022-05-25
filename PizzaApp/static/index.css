@@ -1,5 +1,11 @@
+body{
+    height:100vh;
+}
+
 .homewindow{
+    display:grid;
     background-color: rgb(200, 200, 200);
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 img{
@@ -32,4 +38,14 @@ img{
 
 #bold{
     font-weight: bold;
+}
+
+.deliveryortakeout{
+    display:grid;
+    grid-template-columns: auto;
+}
+
+.createpizza{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
 }
