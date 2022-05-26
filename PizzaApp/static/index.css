@@ -1,12 +1,12 @@
 .homewindow{
     display:grid;
-    background-color: rgb(200, 200, 200);
+    background: url("/static/color.JPG/");
     grid-template-rows: .2fr .4fr .4fr;
     height:85vh;
     width:80vw;
 }
 
-img{
+#pizzaimage{
     width:50px;
     height:50px;
 }
@@ -54,7 +54,8 @@ img{
 .choices{
     display:grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-template-columns: .45fr .1fr .45fr;
 }
 
 button{
@@ -91,4 +92,24 @@ h1{
     padding-left: 20%;
     padding-right: 10%;
     color:rgb(53, 53, 53);
+}
+
+.prices{
+    width:100%;
+    height:90%;
+}
+
+.pizzaprices{
+    display:grid;
+    justify-content: center;
+}
+
+.choices p{
+    display: grid;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.navbar p{
+    font-size: 18px;
 }
