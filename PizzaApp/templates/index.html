@@ -12,12 +12,12 @@
         <div class="navbar">
             <div class="leftside">
                 <img id="pizzaimage" src="{% static 'pizzaicon.jpg' %}"></img>
-                <p>{{welcome}}Welcome, Chandler</p>
+                <p>{{welcome}}</p>
             </div>
             <div class="rightside">
-                <p><a id="bold">Rewards</a></p>
-                <p><a id="bold">Menu</a></p>
-                <p>{{loginstate}}</p>
+                <p><a id="bold" href="{% url 'rewards' %}">Rewards</a></p>
+                <p><a id="bold" href="{% url 'menu' %}">Menu</a></p>
+                <p><a href="{% url 'login' %}">{{loginstate}}</a></p>
             </div>
         </div>
         <div class="homewindow">
@@ -27,9 +27,13 @@
                     <h2 id="experience">Create an experience</h2>
                 </div>
                 <div class="choices">
-                    <button>Delivery</button>
+                    <form action="{% url 'order' %}">
+                        <button type="submit">Delivery</button>
+                    </form>
                     <p>or</p>
-                    <button>Take Out</button>
+                    <form action="{% url 'order' %}">
+                        <button type="submit">Take Out</button>
+                    </form>
                 </div>
             </div>
             <div class="pizzaprices">
@@ -38,8 +42,12 @@
             <div class="menuandrewards">
                 <h1>Take a PEEK at our sides</h1>
                 <div class="buttons">
-                    <button>Menu</button>
-                    <button>Rewards</button>
+                    <form action="{% url 'menu' %}">
+                        <button type="submit">Menu</button>
+                    </form>
+                    <form action="{% url 'rewards' %}">
+                        <button type="submit">Rewards</button>
+                    </form>
                 </div>
                 <h1>Join our Rewards Program</h1>
             </div>
