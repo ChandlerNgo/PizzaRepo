@@ -1,11 +1,9 @@
-body{
-    height:100vh;
-}
-
 .homewindow{
     display:grid;
     background-color: rgb(200, 200, 200);
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .2fr .4fr .4fr;
+    height:85vh;
+    width:80vw;
 }
 
 img{
@@ -16,7 +14,6 @@ img{
 .display{
     display:grid;
     justify-content: center;
-    background-color: aqua;
 }
 
 .navbar{
@@ -42,10 +39,56 @@ img{
 
 .deliveryortakeout{
     display:grid;
-    grid-template-columns: auto;
+    grid-template-columns: .35fr .65fr;
 }
 
-.createpizza{
+.menuandrewards{
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.buttons{
+    display:grid;
+}
+
+.choices{
+    display:grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+button{
+    background-color: gray;
+    color:black;
+    border-radius: 10px;
+    height:80%;
+    width:90%;
+    border-style: solid;
+    font-size: 30px;
+}
+
+h1{
+    display:grid;
+    font-size: 70px;
+    align-content: center;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    color:rgb(53, 53, 53);
+}
+
+#pizza{
+    font-size: 60px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color:rgb(53, 53, 53);
+    margin-bottom: 0;
+}
+
+#experience{
+    margin-top: 0;
+    font-size: 40px;
+    padding-left: 20%;
+    padding-right: 10%;
+    color:rgb(53, 53, 53);
 }
