@@ -1,5 +1,6 @@
 .homewindow{
     display: grid;
+    grid-template-rows: 1fr .2fr 3fr .2fr 1fr 1fr .5fr;
     background: url(/static/color.JPG/);
     border-radius: 10px;
     height: 85vh;
@@ -36,4 +37,36 @@
 
 #bold{
     font-weight: bold;
+}
+
+.hr hr{
+    width:90%;
+}
+
+.or{
+    display:grid;
+    grid-template-columns: .45fr .1fr .45fr;
+}
+
+.left hr,.right hr{
+    width:95%;
+}
+
+.or p{
+    padding:0;
+    margin:0;
+}
+
+#loginform{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+button,input{
+    width:90%;
+}
+
+#login,#loginform,.create,.forgot,.terms{
+    display:grid;
+    justify-items: center;
 }

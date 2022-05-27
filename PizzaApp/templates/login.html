@@ -20,19 +20,22 @@
         </div>
     </div>
     <div class="homewindow">
-        <h1>Login</h1>
+        <h1 id="login">Login</h1>
         <div class="hr"><hr></div>
-        <button>Username</button>
-        <button>Password</button>
-        <button>Log in</button>
+        <form id="loginform">
+            <input type="text" placeholder="Username"></input>
+            <input type="password" placeholder="Password"></input>
+            <input type="submit" value="Log in"></input>
+        </form>
+        
         <div class="or">
-            <hr id="left">
+            <div class="left"><hr id="left"></div>
             <p>or</p>
-            <hr id="right">
-            <button>Create an account</button>
-            <button>Forgot Password?</button>
-            <a>Terms and Conditions</a>
+            <div class="right"><hr id="right"></div>
         </div>
+        <div class="create"><button>Create an account</button></div>
+        <div class="forgot"><button>Forgot Password?</button></div>
+        <div class="terms"><a>Terms and Conditions</a></div>
     </div>
 </div>
 </html>
