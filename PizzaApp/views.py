@@ -35,3 +35,12 @@ def order(request):
 
 def rewards(request):
     return render(request,"rewards.html")
+
+def createaccount(request):
+    return render(request,"createaccount.html")
+
+def forgotpassword(request):
+    return render(request,"forgotpassword.html")
+
+def termsandconditions(request):
+    return render(request,"termsandconditions.html")

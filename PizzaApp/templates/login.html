@@ -23,9 +23,9 @@
         <h1 id="login">Login</h1>
         <div class="hr"><hr></div>
         <form id="loginform">
-            <input type="text" placeholder="Username"></input>
-            <input type="password" placeholder="Password"></input>
-            <input type="submit" value="Log in"></input>
+            <input id="forminput" type="text" placeholder="Username"></input>
+            <input id="forminput" type="password" placeholder="Password"></input>
+            <input id="submit" type="submit" value="Log in"></input>
         </form>
         
         <div class="or">
@@ -33,9 +33,9 @@
             <p>or</p>
             <div class="right"><hr id="right"></div>
         </div>
-        <div class="create"><button>Create an account</button></div>
-        <div class="forgot"><button>Forgot Password?</button></div>
-        <div class="terms"><a>Terms and Conditions</a></div>
+        <form class="create" action="{% url 'createaccount' %}"><button>Create an account</button></form>
+        <form class="forgot" action="{% url 'forgotpassword' %}"><button>Forgot Password?</button></form>
+        <div class="terms"><a href="{% url 'termsandconditions' %}">Terms and Conditions</a></div>
     </div>
 </div>
 </html>

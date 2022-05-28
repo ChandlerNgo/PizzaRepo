@@ -1,6 +1,6 @@
 .homewindow{
     display: grid;
-    grid-template-rows: 1fr .2fr 3fr .2fr 1fr 1fr .5fr;
+    grid-template-rows: .1fr .2fr 3fr .2fr 1fr 1fr .5fr;
     background: url(/static/color.JPG/);
     border-radius: 10px;
     height: 85vh;
@@ -45,6 +45,9 @@
 
 .or{
     display:grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
     grid-template-columns: .45fr .1fr .45fr;
 }
 
@@ -69,4 +72,38 @@ button,input{
 #login,#loginform,.create,.forgot,.terms{
     display:grid;
     justify-items: center;
+    align-items: center;
+}
+
+#loginform > input{
+    height:80%;
+}
+
+.create > button,.forgot > button,.terms > a{
+    height:80%;
+}
+
+.forminput{
+    border:none;
+    border-radius: 10px;
+    background: url(/static/forminputcolor.JPG/);
+}
+
+#submit{
+    background-color: black;
+    color:white;
+}
+
+.create button,.forgot button{
+    background-color: white;
+    color:black;
+}
+
+button,input{
+    border:none;
+    border-radius: 10px;
+}
+
+#forminput::placeholder{
+    padding-left: 10px;
 }
