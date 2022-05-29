@@ -1,6 +1,6 @@
 .homewindow{
     display: grid;
-    grid-template-rows: .1fr .2fr 3fr .2fr 1fr 1fr .5fr;
+    grid-template-rows: .1fr .2fr 6fr .2fr 1fr 1fr .5fr;
     background: url(/static/color.JPG/);
     border-radius: 10px;
     height: 85vh;
@@ -62,7 +62,7 @@
 
 #loginform{
     display:grid;
-    grid-template-rows: 1fr 1fr .01fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr .01fr 1fr;
 }
 
 button,input{

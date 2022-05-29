@@ -25,8 +25,11 @@
         <form id="loginform">
             <input id="forminput" type="text" placeholder="Username"></input>
             <input id="forminput" type="password" placeholder="Password"></input>
+            <input id="forminput" type="password" placeholder="Confirm Password"></input>
+            <input id="forminput" type="birthday" placeholder="Birthday"></input>
+            <input id="forminput" type="email" placeholder="Email"></input>
             <p>error text</p>
-            <input id="submit" type="submit" value="Log in"></input>
+            <input id="submit" type="submit" value="Create Account"></input>
         </form>
         
         <div class="or">
@@ -34,7 +37,7 @@
             <p>or</p>
             <div class="right"><hr id="right"></div>
         </div>
-        <form class="create" action="{% url 'createaccount' %}"><button class="fade">Create an account</button></form>
+        <form class="create" action="{% url 'login' %}"><button class="fade">Log In</button></form>
         <form class="forgot" action="{% url 'forgotpassword' %}"><button class="fade">Forgot Password?</button></form>
         <div class="terms"><a class="hover-underline-animation" href="{% url 'termsandconditions' %}" style="height:20px;">Terms and Conditions</a></div>
     </div>

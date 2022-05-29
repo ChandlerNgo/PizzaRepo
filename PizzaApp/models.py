@@ -7,7 +7,7 @@ User._meta.get_field("username")._unique = True
 class UserData(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     birthday = models.DateField()
-    rewardspoints = models.IntegerField()
+    rewardspoints = models.IntegerField(default=0)
 
 class Orders(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
