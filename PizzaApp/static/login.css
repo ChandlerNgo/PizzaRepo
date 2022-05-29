@@ -62,7 +62,7 @@
 
 #loginform{
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr .01fr 1fr;
 }
 
 button,input{
@@ -104,6 +104,49 @@ button,input{
     border-radius: 10px;
 }
 
-#forminput::placeholder{
-    padding-left: 10px;
+a{ 
+    text-decoration: none;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.fade{
+    transition: background-color .75s;
+    }
+    
+    .fade:hover {
+    background-color: gray;
+    }
+    
+    .fade:focus,
+    .fade:active {
+    background-color: gray;
+    transition: none;
+    }
+
+#loginform p{
+    margin:0;
+    color:red;
 }
