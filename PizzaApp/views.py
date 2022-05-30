@@ -40,3 +40,15 @@ def forgotpassword(request):
 
 def termsandconditions(request):
     return render(request,"termsandconditions.html")
+
+def pizza(request):
+    return render(request,"pizza.html")
+
+def desserts(request):
+    return render(request,"desserts.html")
+
+def drinks(request):
+    return render(request,"drinks.html")
+
+def sides(request):
+    return render(request,"sides.html")
