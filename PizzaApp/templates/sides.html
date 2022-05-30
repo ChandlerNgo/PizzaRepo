@@ -1,1 +1,61 @@
-this will be the sides page
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Home Page</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'food.css' %}">
+</head>
+<body>
+    <div class="display">
+        <div class="navbar">
+            <div class="leftside">
+                <a href="{% url 'index' %}"><img id="pizzaimage" src="{% static 'pizzaicon.jpg' %}"></img></a>
+                <p>{{welcome}}</p>
+            </div>
+            <div class="rightside">
+                <p><a class="hover-underline-animation" id="bold" href="{% url 'rewards' %}">Rewards</a></p>
+                <p><a class="hover-underline-animation" id="bold" href="{% url 'order' %}">Menu</a></p>
+                <p><a class="hover-underline-animation" href="{% url 'login' %}">{{loginstate}}</a></p>
+            </div>
+        </div>
+        <div class="homewindow">
+            <div class="topsection">
+                <form action="{% url 'order' %}">
+                    <button class="fade" type="submit">Delivery</button>
+                </form>
+                <p>or</p>
+                <form action="{% url 'order' %}">
+                    <button class="fade" type="submit">Take Out</button>
+                </form>
+            </div>
+            <div class="bottomsection">
+                <div class="items">
+                    <form action="{% url 'order' %}">
+                        <button class="fade" type="submit">Garlic Sauce</button>
+                    </form>
+                    <form action="{% url 'order' %}">
+                        <button class="fade" type="submit">Cheese Packets</button>
+                    </form>
+                    <form action="{% url 'order' %}">
+                        <button class="fade" type="submit">Hot Pepper Packets</button>
+                    </form>
+                    <form action="{% url 'order' %}">
+                        <button class="fade" type="submit">Napkins</button>
+                    </form>
+                </div>
+                <div class="order">
+                    <p>Order Type:</p>
+                    <p>pizza</p>
+                    <p>Subtotal:</p>
+                    <p>Tax:</p>
+                    <p>Discount:</p>
+                    <p>Total:</p>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+</body>
+</html>

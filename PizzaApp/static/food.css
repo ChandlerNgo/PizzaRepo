@@ -76,7 +76,8 @@ a{
 
 .items{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(250px,250px);
 }
 
 a{ 

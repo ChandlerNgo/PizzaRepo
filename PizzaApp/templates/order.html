@@ -23,30 +23,36 @@
         <div class="homewindow">
             <div class="topsection">
                 <form action="{% url 'order' %}">
-                    <button type="submit">Delivery</button>
+                    <button class="fade" type="submit">Delivery</button>
                 </form>
                 <p>or</p>
                 <form action="{% url 'order' %}">
-                    <button type="submit">Take Out</button>
+                    <button class="fade" type="submit">Take Out</button>
                 </form>
+                <!-- make these two a div to do a if else statement for when customer clicks delivery or takeout -->
             </div>
             <div class="bottomsection">
                 <div class="items">
                     <form action="{% url 'pizza' %}">
-                        <button type="submit">Pizza</button>
+                        <button class="fade" type="submit">Pizza</button>
                     </form>
                     <form action="{% url 'drinks' %}">
-                        <button type="submit">Drinks</button>
+                        <button class="fade" type="submit">Drinks</button>
                     </form>
                     <form action="{% url 'desserts' %}">
-                        <button type="submit">Deserts</button>
+                        <button class="fade" type="submit">Desserts</button>
                     </form>
                     <form action="{% url 'sides' %}">
-                        <button type="submit">Sides</button>
+                        <button class="fade" type="submit">Sides</button>
                     </form>
                 </div>
                 <div class="order">
-                    
+                    <p>Order Type:</p>
+                    <p>pizza</p>
+                    <p>Subtotal:</p>
+                    <p>Tax:</p>
+                    <p>Discount:</p>
+                    <p>Total:</p>
                 </div>
             </div>
                 
