@@ -25,10 +25,6 @@ def login(request):
             "loginstate":"Log In",
         }
         return render(request,"login.html",response)
-    return render(request,"login.html")
-    
-def menu(request):
-    return render(request,"menu.html")
 
 def order(request):
     return render(request,"order.html")
