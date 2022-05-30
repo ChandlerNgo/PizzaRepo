@@ -65,7 +65,7 @@ button{
     border-radius: 10px;
     height:80%;
     width:90%;
-    border-style: solid;
+    border-style: none;
     font-size: 30px;
 }
 
@@ -150,3 +150,17 @@ a{
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  .fade{
+    transition: background-color .75s;
+}
+
+    .fade:hover {
+        background-color: white;
+    }
+
+    .fade:focus,
+    .fade:active {
+        background-color: white;
+        transition: none;
+    }
