@@ -1,0 +1,142 @@
+@font-face {
+    font-family: NormalFont;
+    src: url(Poppins-Regular.ttf);
+  }
+
+.homewindow{
+    font-family: NormalFont;
+    display:grid;
+    background: url(/static/color.JPG/);
+    grid-template-rows: .2fr .8fr;
+    border-radius: 10px;
+    height:90vh;
+    width:50vw; 
+}
+
+#pizzaimage{
+    width:50px;
+    height:50px;
+}
+
+.display{
+    display:grid;
+    justify-items: center;
+}
+
+.navbar{
+    font-family: NormalFont;
+    display:grid;
+    width:80vw;
+    grid-template-columns: 1fr 1fr;
+}
+
+.leftside{
+    display: grid;
+    grid-template-columns: .07fr .2fr;
+}
+
+.rightside{
+    display: grid;
+    justify-content: end;
+    grid-template-columns: .1fr .1fr .07fr;
+}
+
+#bold{
+    font-weight: bold;
+}
+
+button{
+    font-family: NormalFont;
+    background-color: gray;
+    color:black;
+    border-radius: 10px;
+    height:80%;
+    width:90%;
+    border-style: none;
+    font-size: 30px;
+}
+
+.navbar p{
+    font-size: 18px;
+}
+
+form{
+    display:grid;
+    align-items: center;
+    justify-items: center;
+}
+
+form img{
+    width:90px;
+    height: 200px;
+}
+
+a{ 
+    text-decoration: none;
+}
+
+.topsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bottomsection{
+    display: grid;
+    grid-template-columns: .8fr .2fr;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(250px,250px) minmax(250px,250px) minmax(250px,250px) minmax(250px,250px);
+}
+
+.items form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .topsection p{
+      display:grid;
+      justify-content: center;
+      align-content: center;
+      font-size: 40px;
+  }
+
+.fade{
+    transition: background-color .75s;
+}
+
+    .fade:hover {
+        background-color: white;
+    }
+
+    .fade:focus,
+    .fade:active {
+        background-color: white;
+        transition: none;
+    }
