@@ -64,8 +64,11 @@ form{
     display:grid;
     align-items: center;
     justify-items: center;
-    height:100%;
-    width:100%;
+}
+
+form img{
+    width:150px;
+    height: 150px;
 }
 
 a{ 
@@ -86,10 +89,6 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: minmax(250px,250px) minmax(250px,250px) minmax(250px,250px) minmax(250px,250px);
-}
-
-a{ 
-    text-decoration: none;
 }
 
 .hover-underline-animation {
