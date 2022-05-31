@@ -1,7 +1,13 @@
+@font-face {
+    font-family: NormalFont;
+    src: url(Poppins-Regular.ttf);
+  }
+
 .homewindow{
-    display: grid;
-    grid-template-rows: .1fr .2fr 3fr .2fr 1fr 1fr .5fr;
+    font-family: NormalFont;
+    display:grid;
     background: url(/static/color.JPG/);
+    grid-template-rows: .1fr .2fr 3fr .2fr 1fr 1fr .5fr;
     border-radius: 10px;
     height: 85vh;
     width: 30vw;
@@ -12,6 +18,10 @@
     height:50px;
 }
 
+body{
+    background: url(/static/cheese.JPG/);
+}
+
 .display{
     display:grid;
     justify-content: center;
@@ -19,6 +29,7 @@
 }
 
 .navbar{
+    font-family: NormalFont;
     display:grid;
     width:80vw;
     grid-template-columns: 1fr 1fr;
@@ -67,6 +78,8 @@
 
 button,input{
     width:90%;
+    font-family: NormalFont;
+    font-size: 20px;
 }
 
 #login,#loginform,.create,.forgot,.terms{

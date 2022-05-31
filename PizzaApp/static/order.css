@@ -1,6 +1,12 @@
+@font-face {
+    font-family: NormalFont;
+    src: url(Poppins-Regular.ttf);
+  }
+
 .homewindow{
+    font-family: NormalFont;
     display:grid;
-    background: url("/static/color.JPG/");
+    background: url(/static/color.JPG/);
     grid-template-rows: .2fr .8fr;
     border-radius: 10px;
     height:85vh;
@@ -12,12 +18,17 @@
     height:50px;
 }
 
+body{
+    background: url(/static/cheese.JPG/);
+}
+
 .display{
     display:grid;
     justify-items: center;
 }
 
 .navbar{
+    font-family: NormalFont;
     display:grid;
     width:80vw;
     grid-template-columns: 1fr 1fr;
@@ -39,6 +50,7 @@
 }
 
 button{
+    font-family: NormalFont;
     background-color: gray;
     color:black;
     border-radius: 10px;
